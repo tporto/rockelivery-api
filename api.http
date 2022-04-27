@@ -1,0 +1,12 @@
+### Create user
+POST http://localhost:4000/api/users
+Content-Type: application/json
+
+{
+  "address": "Rua A",
+  "cep": "65913180",
+  "name": "Thiago",
+  "cpf": "02681321326",
+  "password": "123456",
+  "age": 33
+}
