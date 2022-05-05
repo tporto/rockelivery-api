@@ -49,9 +49,10 @@ defmodule Rockelivery.MixProject do
       {:telemetry_poller, "~> 1.0"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      ##
+      ## thirdy
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:pbkdf2_elixir, "~> 2.0"},
+      {:guardian, "~> 2.0"},
       ## Test
       {:excoveralls, "~> 0.10", only: :test},
       {:ex_machina, "~> 2.7.0"}
