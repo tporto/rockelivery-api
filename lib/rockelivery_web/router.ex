@@ -12,6 +12,8 @@ defmodule RockeliveryWeb.Router do
     pipe_through :api
 
     resources "/users", UserController, except: [:new, :edit]
+
+    post "/items", ItemController, :create
   end
 
   # Enables the Swoosh mailbox preview in development.
