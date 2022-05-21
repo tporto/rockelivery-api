@@ -20,6 +20,8 @@ defmodule Rockelivery.Users.User do
     field :password_hash, :string
     field :name, :string
 
+    has_many :orders, Rockelivery.Order
+
     timestamps()
   end
 
