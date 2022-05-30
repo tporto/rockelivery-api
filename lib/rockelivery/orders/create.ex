@@ -28,7 +28,7 @@ defmodule Rockelivery.Orders.Create do
     |> multiply_items(items_map, items_params)
   end
 
-  defp multiply_items(true, _, _), do: { :error, "Invalid items ids"}
+  defp multiply_items(true, _, _), do: {:error, "Invalid items ids"}
 
   defp multiply_items(false, items, items_params) do
     items =
